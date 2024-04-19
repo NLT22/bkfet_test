@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../home//index.css" />
+    <!-- <link rel="stylesheet" href="./grid.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid row">
+      <!-- Header -->
+      <div class="header row">
+        <div class="logo-bk col col-sm">
+          <div class="menu-bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <img
+            src="../../../assets//images/Logo_PNG.png"
+            alt="logo"
+            class="header-logo"
+          />
+          
+        </div>
+        
+        <div class="header-menu col-sm-6">
+          <a href="#" class="menu__link">
+            <i class="fa-solid fa-house"></i><span>Trang chủ</span>
+          </a>
+          <a href="../course/course.html" class="menu__link">
+            <i class="fa-solid fa-circle-play"></i><span>Khóa học</span>
+          </a>
+          <a href="" class="menu__link">
+            <i class="fa-solid fa-book-bookmark"></i><span>Tài liệu</span>
+          </a>
+          <a href="" class="menu__link">
+            <i class="fa-solid fa-book-open"></i><span>Học tập</span>
+          </a>
+          <a href="" class="menu__link">
+            <i class="fa-regular fa-comment-dots"></i><span>Tin nhắn</span>
+          </a>
+        </div>
+
+        <div class="search-button col col-sm">
+
+          <div class="search-container">
+            <input type="text" placeholder="Nhập ID" class="search-input" id="seachInput" />
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </button>
+          </div>
+
+          <div class="header-button">
+            
+            <div class="account">
+              <i class="fa-solid fa-user button-account"></i>
+            </div>
+
+            <div class="login">
+              <a href="#" class="button-login">Đăng nhập</a>
+            </div>
+
+            <div class="sign-up">
+              <a href="#" class="button-sign_up">Đăng ký</a>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+      <!-- .................................................................. -->
+      <!-- Container -->
+      <div class="content-home row">
+        <div class="wrapper">
+          <!-- SideBar -->
+          <div class="sideBar col col-2">
+            <div class="list-router-home row">
+              <div class="col">
+                <div class="link row">
+                  <div class="link-icon_title">
+                    <div class="link-icon">
+                      <i
+                        class="fa-solid fa-mobile-screen-button fa-2xl"
+                        style="color: black"
+                      ></i>
+                    </div>
+                    <a class="link-title" href="">Mới nhất</a>
+                  </div>
+                </div>
+                <div class="link row">
+                  <div class="link-icon_title">
+                    <div class="link-icon">
+                      <i
+                        class="fa-solid fa-user fa-2xl"
+                        style="color: black"
+                      ></i>
+                    </div>
+                    <a class="link-title" href="">Đang theo dõi</a>
+                  </div>
+                </div>
+                <div class="link row">
+                  <div class="link-icon_title">
+                    <div class="link-icon">
+                      <i
+                        class="fa-solid fa-photo-film fa-xl"
+                        style="color: black"
+                      ></i>
+                    </div>
+                    <a class="link-title" href="">Khóa học của bạn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-course row">
+              <h1>Khóa học nổi bật</h1>
+              <!--  -->
+              <div class="course">
+                <div class="list">
+                  <div class="course-title" id="dropdown1Container">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="course-title-right">
+                      <span>Bách Khoa đại cương</span>
+                      <button
+                        onclick="toggleDropdown('dropdown1') "
+                        class="dropbtn"
+                      >
+                        <i
+                          class="fa-solid fa-angle-down fa-xl"
+                          id="dropdown1Icon"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="dropdown1Content" class="dropdown-content">
+                    <a>Giải tích 1</a>
+                    <a>Vật lý đại cương 1</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                  </div>
+
+                  <div class="course-title" id="dropdown2Container">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="course-title-right">
+                      <span>Đánh giá tư duy Bách Khoa</span>
+                      <button
+                        onclick="toggleDropdown('dropdown2') "
+                        class="dropbtn"
+                      >
+                        <i
+                          class="fa-solid fa-angle-down fa-xl"
+                          id="dropdown2Icon"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="dropdown2Content" class="dropdown-content">
+                    <a>Giải tích 1</a>
+                    <a>Vật lý đại cương 1</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                  </div>
+                  <div class="course-title" id="dropdown3Container">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="course-title-right">
+                      <span>Lập trình</span>
+                      <button
+                        onclick="toggleDropdown('dropdown3') "
+                        class="dropbtn"
+                      >
+                        <i
+                          class="fa-solid fa-angle-down fa-xl"
+                          id="dropdown3Icon"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="dropdown3Content" class="dropdown-content">
+                    <a>Giải tích 1</a>
+                    <a>Vật lý đại cương 1</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <!--  -->
+            <div class="list_teacher row">
+              <div class="header_list_teacher">
+                <h1>Giáo viên</h1>
+                <button onclick="toggleDropdownTeacher()">
+                  <i
+                    class="fa-solid fa-angle-down fa-xl"
+                    id="dropdownIconTeacher"
+                  ></i>
+                </button>
+              </div>
+              <div class="content_list_teacher">
+                <img
+                  src="../../../assets/images/avata.jpg"
+                  alt="avata"
+                  class="teacher_avata"
+                />
+                <span>Vương Xuân Hiếu</span>
+              </div>
+              <div class="content_list_teacher">
+                <img
+                  src="../../../assets/images/avata.jpg"
+                  alt="avata"
+                  class="teacher_avata"
+                />
+                <span>Vương Xuân Hiếu</span>
+              </div>
+              <div class="content_list_teacher">
+                <img
+                  src="../../../assets/images/avata.jpg"
+                  alt="avata"
+                  class="teacher_avata"
+                />
+                <span>Vương Xuân Hiếu</span>
+              </div>
+              <div id="myDropdownTeacher" class="dropdown-content-teacher">
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+                <div class="content_list_teacher">
+                  <img
+                    src="../../../assets/images/avata.jpg"
+                    alt="avata"
+                    class="teacher_avata"
+                  />
+                  <span>Vương Xuân Hiếu</span>
+                </div>
+              </div>
+            </div>
+            <div class="introduce">
+              <h1>Giới thiệu & Liên hệ</h1>
+              <div class="introduce-title">
+                <p>
+                  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ............................................................. -->
+          <!-- Container -->
+          <div class="list_video__home col col-8">
+            <div class="slide" id="slide0">
+              <div class="video__home">
+                <img
+                  class="video_course"
+                  src="../../../assets/images/demo1.jpg"
+                  alt="video"
+                />
+                <div class="title_status">
+                  <div class="icon-cmt">
+                    <button class="heart">
+                      <i class="fa-solid fa-heart fa-2xl icon-heart"></i>
+                    </button>
+                    <button class="close" type="button" id="toggleButton0">
+                      <i class="fa-regular fa-comment-dots fa-2xl"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      class="video_avata"
+                      src="../../../assets/images/avata.jpg"
+                      alt="avata"
+                    />
+                    <!-- <span class="video_title">BKSE</span> -->
+                  </div>
+
+                  <div class="custom-offcanvas" id="customOffcanvasRight">
+                    <div
+                      class="custom-offcanvas-overlay"
+                      id="customOffcanvasOverlay"
+                    ></div>
+                    <div class="custom-offcanvas-content">
+                      <div class="custom-offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Bình luận</h5>
+                        <button
+                          type="button"
+                          class="custom-closeButton"
+                          id="customCloseButton"
+                          aria-label="Close"
+                          s
+                        >
+                          <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                        </button>
+                      </div>
+                      <div class="custom-offcanvas-body">
+                        <p>This is the content of the offcanvas.</p>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div class="comment">
+                          <img
+                            src="../../../../public/assets_educations/images/avata.jpg"
+                            alt="cmt"
+                          />
+                        </div>
+                      </div>
+                      <div class="offcanvas-footer shadow">
+                        <button>
+                          <i
+                            class="fa-regular fa-face-smile fa-xl offcanvas-icon"
+                          ></i>
+                        </button>
+                        <input type="text" class="comment_input" name="fname" />
+                        <button>
+                          <i
+                            class="fa-solid fa-arrow-up fa-xl offcanvas-icon"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide1">
+              <div class="video__home">
+                <img
+                  class="video_course"
+                  src="../../../assets/images/demo1.jpg"
+                  alt="video"
+                />
+                <div class="title_status">
+                  <div class="icon-cmt">
+                    <button class="heart">
+                      <i class="fa-solid fa-heart fa-2xl icon-heart"></i>
+                    </button>
+                    <button class="close" type="button" id="toggleButton1">
+                      <i class="fa-regular fa-comment-dots fa-2xl"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      class="video_avata"
+                      src="../../../assets/images/avata.jpg"
+                      alt="avata"
+                    />
+                    <!-- <span class="video_title">BKSE</span> -->
+                  </div>
+                  <div class="custom-offcanvas" id="customOffcanvasRight">
+                    <div
+                      class="custom-offcanvas-overlay"
+                      id="customOffcanvasOverlay"
+                    ></div>
+                    <div class="custom-offcanvas-content">
+                      <div class="custom-offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Bình luận</h5>
+                        <button
+                          type="button"
+                          class="custom-closeButton"
+                          id="customCloseButton"
+                          aria-label="Close"
+                          s
+                        >
+                          <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                        </button>
+                      </div>
+                      <div class="custom-offcanvas-body">
+                        <p>This is the content of the offcanvas.</p>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div class="comment">
+                          <img
+                            src="../../../../public/assets_educations/images/avata.jpg"
+                            alt="cmt"
+                          />
+                        </div>
+                      </div>
+                      <div class="offcanvas-footer shadow">
+                        <button>
+                          <i
+                            class="fa-regular fa-face-smile fa-xl offcanvas-icon"
+                          ></i>
+                        </button>
+                        <input type="text" class="comment_input" name="fname" />
+                        <button>
+                          <i
+                            class="fa-solid fa-arrow-up fa-xl offcanvas-icon"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="video__home1">
+                <img
+                  class="video_course1"
+                  src="../../../assets/images/demo1.jpg"
+                  alt="video"
+                />
+                <div class="title_status1">
+                  <div class="icon-cmt">
+                    <button class="heart">
+                      <i class="fa-solid fa-heart fa-2xl icon-heart"></i>
+                    </button>
+                    <button class="close" type="button" id="toggleButton2">
+                      <i class="fa-regular fa-comment-dots fa-2xl"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      class="video_avata"
+                      src="../../../assets/images/avata.jpg"
+                      alt="avata"
+                    />
+                    <!-- <span class="video_title">BKSE</span> -->
+                  </div>
+                  <div class="custom-offcanvas" id="customOffcanvasRight">
+                    <div
+                      class="custom-offcanvas-overlay"
+                      id="customOffcanvasOverlay"
+                    ></div>
+                    <div class="custom-offcanvas-content">
+                      <div class="custom-offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Bình luận</h5>
+                        <button
+                          type="button"
+                          class="custom-closeButton"
+                          id="customCloseButton"
+                          aria-label="Close"
+                          s
+                        >
+                          <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                        </button>
+                      </div>
+                      <div class="custom-offcanvas-body">
+                        <p>This is the content of the offcanvas.</p>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div class="comment">
+                          <img
+                            src="../../../../public/assets_educations/images/avata.jpg"
+                            alt="cmt"
+                          />
+                        </div>
+                      </div>
+                      <div class="offcanvas-footer shadow">
+                        <button>
+                          <i
+                            class="fa-regular fa-face-smile fa-xl offcanvas-icon"
+                          ></i>
+                        </button>
+                        <input type="text" class="comment_input" name="fname" />
+                        <button>
+                          <i
+                            class="fa-solid fa-arrow-up fa-xl offcanvas-icon"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sideBar_right__home col col-2">
+            <div class="sideBar_right col">
+              <div class="list_course_new row c-12">
+                <div class="header_title_new">
+                  <h1>Khóa học mới</h1>
+                  <a class="">Xem tất cả</a>
+                </div>
+                <div class="course_list">
+                  <div class="course_new">
+                    <div class="img_course">
+                      <img
+                        src="../../../assets/images/coures.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <span>Khóa học tư duy 2024</span>
+                  </div>
+                  <div class="course_new">
+                    <div class="img_course">
+                      <img
+                        src="../../../assets/images/coures.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <span>Khóa học tư duy 2024</span>
+                  </div>
+                  <div class="course_new">
+                    <div class="img_course">
+                      <img
+                        src="../../../assets/images/coures.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <span>Khóa học tư duy 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="list_commt row c-12">
+                <div><h1>HỎI & ĐÁP</h1></div>
+                <div class="course_list">
+                  <div class="course_new">
+                    <div class="img_course">
+                      <img
+                        src="../../../assets/images/coures.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="list-question">
+                      <b>ngo duc kien</b>
+                      <span>em có câu hỏi</span>
+                      <b>21h04</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ............................................................................. -->
+        </div>
+      </div>
+      <!-- .......................................................... -->
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/3907a190cb.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+  <script type="module">
+    import swiper from "https://cdn.jsdelivr.net/npm/swiper@11.1.0/+esm";
+  </script>
+</html>

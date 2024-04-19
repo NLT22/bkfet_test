@@ -1,0 +1,25 @@
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-nav {
+  margin-top: 20px;
+}
+
+.slider-nav div {
+  cursor: pointer;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  color: black;
+}
