@@ -867,13 +867,14 @@ a {
 
 
 @media only screen and (min-width:991px) and (max-width: 1400px) {
+  /* Ẩn các biểu tượng menu và nút đăng nhập đăng ký và hiện icon thay thế*/
   .menu__link span,
   .login,
   .sign-up{ 
     display: none;
-  }
+  } 
   .account{
-    display: block;
+    display: inline-block;
   }
   .menu__link i{
     font-size: 25px;
@@ -895,9 +896,11 @@ a {
   .menu__link i{
     font-size: 25px;
   }
+  /* Ẩn thanh tìm kiếm */
   .search-container .search-input{
     width: 0px;
   }
+  /* ẩn sidebar bên phải  */
   .sideBar_right__home{
     display: none;
   }
@@ -907,6 +910,7 @@ a {
 
 }
 @media only screen and (max-width: 576px) {
+  /* chuyển header menu xuống dưới cùng màn hình */
   .header-menu{
     position: fixed;
     height: 60px;
@@ -926,6 +930,7 @@ a {
   .sideBar{
     display: none;
   }
+  /* class để hiển thị sidebar left khi ấn vào nút menu */
   .sideBar-left-phone{
     position: fixed;
     background-color: white;
@@ -939,7 +944,6 @@ a {
     flex-direction: column;
     overflow-y: auto;
   }
-
   .list_video__home{
     width: 100%;
   }
