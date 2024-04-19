@@ -901,6 +901,10 @@ a {
   .sideBar_right__home{
     display: none;
   }
+  .sideBar{
+    width: 40%;
+  }
+
 }
 @media only screen and (max-width: 576px) {
   .header-menu{
@@ -922,7 +926,7 @@ a {
   .sideBar{
     display: none;
   }
-  .sideBar-right-phone{
+  .sideBar-left-phone{
     position: fixed;
     background-color: white;
     z-index: 10000;

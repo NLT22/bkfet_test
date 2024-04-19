@@ -133,7 +133,7 @@ overlay.addEventListener("click", function () {
 const menuBarBtn = document.querySelector(".menu-bars");
 const sideBarRight = document.querySelector(".sideBar");
 menuBarBtn.addEventListener("click",function(){
-  sideBarRight.classList.toggle("sideBar-right-phone");
+  sideBarRight.classList.toggle("sideBar-left-phone");
 })
 
 
