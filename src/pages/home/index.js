@@ -130,6 +130,8 @@ overlay.addEventListener("click", function () {
   isOffcanvasActive = false;
 });
 
+
+// hiển thị/ ẩn menu bar cho menubars button
 const menuBarBtn = document.querySelector(".menu-bars");
 const sideBarRight = document.querySelector(".sideBar");
 menuBarBtn.addEventListener("click",function(){
@@ -137,6 +139,8 @@ menuBarBtn.addEventListener("click",function(){
 })
 
 
+
+  // Xử lý hiệu ứng hiện ẩn thanh tìm kiếm
 const searchContainer = document.querySelector(".search-container");
 const searchInput = document.querySelector(".search-input");
 const headerBtn = document.querySelector(".header-button");
@@ -157,8 +161,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
   });
 
+
+
   document.addEventListener("click", function(event) {
-    // Check if the click event occurred inside the search container
     if (searchBtnCheck && !searchContainer.contains(event.target)) {
       searchInput.style.width = "0px";
       searchBtnCheck = false;
