@@ -26,6 +26,7 @@ function toggleDropdownTeacher() {
 
   dropdown.classList.toggle("show");
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   var slides = document.querySelectorAll(".slide");
   var currentSlide = 0;
@@ -137,9 +138,6 @@ const sideBarRight = document.querySelector(".sideBar");
 menuBarBtn.addEventListener("click",function(){
   sideBarRight.classList.toggle("sideBar-left-phone");
 })
-
-
-
   // Xử lý hiệu ứng hiện ẩn thanh tìm kiếm
 const searchContainer = document.querySelector(".search-container");
 const searchInput = document.querySelector(".search-input");
@@ -160,9 +158,6 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput.style.width = searchWidth;
   
   });
-
-
-
   document.addEventListener("click", function(event) {
     if (searchBtnCheck && !searchContainer.contains(event.target)) {
       searchInput.style.width = "0px";
