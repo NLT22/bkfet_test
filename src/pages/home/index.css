@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 body {
   font-family: var(--font-family);
@@ -415,7 +415,7 @@ a {
 }
 .course-title > .course-title-right > span {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
@@ -907,7 +907,9 @@ a {
   .sideBar{
     width: 40%;
   }
-
+  .list_video__home{
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 576px) {
   /* chuyển header menu xuống dưới cùng màn hình */
@@ -937,7 +939,7 @@ a {
     z-index: 10000;
     top: 60px;
     left: 0;
-    width: 80%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: start;
@@ -947,4 +949,110 @@ a {
   .list_video__home{
     width: 100%;
   }
+  /* reposinve cho phần đầu sidebar left */
+  
+  h1{
+    font-size: 5vw;
+  }
+  /* 1.phần router */
+  .list-router-home {
+    margin: 2vw;
+    padding-bottom: 1.5rem;
+    backdrop-filter: none;
+  }
+  .list-router-home > .col {
+    gap: 1rem;
+  }
+  .link {
+    height: 5vw;
+  }
+  .link-icon_title {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    gap: 2vw;
+  }
+  .link-icon > i {
+    height: 100%;
+    width: 8vw;
+    font-size: 5vw;
+  }
+  .link-title {
+    height: 100%;
+    font-size: 3.5vw;
+    line-height: 1.4285rem;
+  }
+  /* 2. phần course */
+  .list-course {
+    margin: 2vw;
+    padding: 0 0 1.5rem 0;
+  }
+  /* Style cho nội dung dropdown */
+  .dropdown-content {
+    margin-left: 8vw;
+  }
+  .dropdown-content > a,
+  .dropbtn {
+    font-size: 3.5vw;
+  }
+  /* Style cho các link trong dropdown */
+  .dropdown-content a {
+    padding: 1vw 2vw;
+  }
+
+  /* .................................................................... */
+  .course {
+    padding-top: 2vw;
+  }
+  .list {
+    gap: 1vw;
+  }
+  .course-title {
+    gap: 3vw;
+  }
+  .course-title > i {
+    width: 8vw;
+    font-size: 5vw;
+  }
+  .course-title-right > i {
+    width: 100%;
+    gap: 1vw;
+  }
+  .course-title > .course-title-right > span {
+    font-size: 3.5vw;
+  }
+
+  /* 3. phần list-teacher */
+  .list_teacher {
+    padding-left: 0;
+    margin-left: 2vw;
+  }
+  .header_list_teacher {
+    padding-right: 3vw;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .header_list_teacher > button {
+    padding: 0 8px 0 0;  /* Chưa xếp thẳng được drop btn  */
+    font-size: 3.5vw;
+  }
+  .content_list_teacher {
+    padding-bottom: 2vw;
+    gap: 3vw;
+  }
+  .content_list_teacher >span {
+    font-size: 3.5vw;
+  }
+  .teacher_avata {
+    width: 8vw;
+    border-radius: 50%;
+  }
+  /* Style cho các link trong dropdown */
+  .dropdown-content-teacher a {
+    padding: 1vw 2vw;
+  }
+  .introduce-title > p {
+    font-size: 3.5vw;
+  }
+  
 }
