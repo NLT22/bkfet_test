@@ -166,7 +166,9 @@ a {
   display: flex;
   align-items: center;
   transition: 0.5s;
-  gap: 10px;
+  size: 50%;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 .login,
 .sign-up {
@@ -174,12 +176,17 @@ a {
   text-align: center;
   line-height: 40px;
   border-radius: 20px;
-  border: 1px solid #007bff;
   background-color: transparent; /* Thêm nền trong suốt */
   transition: background-color 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu */
 }
-.sign-up{
-  background-color: #007bff;
+
+.sign-up a,
+.login:hover a{
+  color: white; 
+}
+
+.sign-up:hover{
+  background-color: #004ea2;  
 }
 
 .button-account{
@@ -193,25 +200,8 @@ a {
   display: none;
 }
 
-.button-login,
-.button-sign_up {
-  font-size: 16px;
-  border-radius: 20px;
-}
-.login:hover{
-  background-color: #007bff;
-}
 
-.sign-up:hover{
-  background-color: #004ea2;
-}
-.sign-up a {
-  color: white; /* Đổi màu chữ thành trắng khi hover */
-}
 
-.login:hover a{
-  color: white; /* Đổi màu chữ thành trắng khi hover */
-}
 /*------------  */
 /*-----------------------------------------content  ----------------------------------------------------*/
 
@@ -828,7 +818,15 @@ a {
   font-size: 14px;
 }
 
+@media only screen and (min-width:1401px) {
+  .header-button{
+    background-image: url("../../../assets/images/Asset\ 1.png");
+    background-repeat: no-repeat;
+    background-position:center right;
+    border: 1px solid #007bff;
 
+  }
+}
 @media only screen and (min-width:991px) and (max-width: 1400px) {
   /* Ẩn các biểu tượng menu và nút đăng nhập đăng ký và hiện icon thay thế*/
   .menu__link span,
@@ -842,6 +840,9 @@ a {
   .menu__link i{
     font-size: 25px;
     transition: 0.5s;
+  }
+  .header-button{
+    background-image: none;
   }
 }
 @media only screen and (max-width: 990px) {

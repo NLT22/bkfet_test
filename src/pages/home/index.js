@@ -169,3 +169,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+
+// Một chút animation cho login sign up button 
+const loginBtn=document.querySelector(".login");
+const signInBtn=document.querySelector(".sign-up");
+const signInText=document.querySelector(".button-sign_up")
+
+loginBtn.addEventListenegitr("mouseover",function(){
+  headerBtn.style.backgroundPosition = "center left";
+  signInText.style.color = "#007bff";
+})
+loginBtn.addEventListener("mouseout",function(){
+  headerBtn.style.backgroundPosition = "center right";
+  signInText.style.color = "#fff";
+})
