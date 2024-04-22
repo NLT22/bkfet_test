@@ -216,7 +216,6 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 999;
   position: fixed;
 }
 .wrapper {
@@ -226,6 +225,7 @@ a {
   width: 100%;
   height: 100%;
   padding: 0;
+  overflow-y: auto;
 }
 /* ----------------------------SIDEBAR----------------------------------- */
 
@@ -523,7 +523,7 @@ a {
   margin: 0;
   overflow: hidden;
   scroll-behavior: smooth;
-  z-index: 1001;
+  z-index: 100;
 }
 .slide {
   height: 100%;
@@ -571,60 +571,6 @@ a {
 }
 /*  */
 
-.custom-offcanvas {
-  position: fixed;
-  top: 0;
-
-  right: -520px; /* Offcanvas menu ẩn ban đầu */
-  width: 520px;
-  height: 100%;
-  background-color: #fff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Đổ bóng cho offcanvas */
-  transition: all 0.3s ease;
-}
-
-.custom-offcanvas.active {
-  right: 0; /* Hiển thị offcanvas menu khi active */
-}
-
-.custom-offcanvas-header {
-  padding: 1rem;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-#offcanvasRightLabel {
-  color: black;
-}
-.custom-closeButton {
-  border: none;
-  background-color: #fff;
-}
-.custom-offcanvas-body {
-  padding: 1rem;
-}
-.custom-offcanvas-content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-.custom-offcanvas-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 73%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Màu đục đặc */
-  z-index: 10;
-  display: none;
-}
-.custom-offcanvas.active .custom-offcanvas-overlay {
-  display: block; /* Hiển thị overlay khi offcanvas active */
-}
 
 .video__home {
   padding: 10px 10px 60px 10px;
@@ -665,12 +611,69 @@ a {
   font-size: 20px;
 }
 /*  */
-.offcanvas .offcanvas-en {
+
+.custom-offcanvas {
+  position: fixed;
+  padding-top: 60px;
+  top: 0;
+  right: -520px; /* Offcanvas menu ẩn ban đầu */
+  width: 21.5%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.custom-offcanvas.active {
+  right: 0; /* Hiển thị offcanvas menu khi active */
+}
+
+.custom-offcanvas-header {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#offcanvasRightLabel {
+  color: black;
+}
+.custom-closeButton {
+  border: none;
+  background-color: #fff;
+}
+.custom-offcanvas-body {
+  padding: 1rem;
+}
+.custom-offcanvas-content {
+  position: relative;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.custom-offcanvas-overlay {
+  position: fixed;
+  margin-top: 60px;
+  top: 0;
+  left: 0;
+  width: 78.5%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Màu đục đặc */
+  z-index: 100;
+  display: none;
+}
+.custom-offcanvas.active .custom-offcanvas-overlay {
+  display: block; /* Hiển thị overlay khi offcanvas active */
+}
+
+/* .offcanvas .offcanvas-en {
   z-index: 100000;
 }
 #offcanvasRight {
   z-index: 100000;
-}
+} */
 .comment_home {
   position: absolute;
   width: 500px;
@@ -680,22 +683,14 @@ a {
     position: absolute; */
   z-index: 100000;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  overflow-y: auto;
-}
 .offcanvas-header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  /* background-color: #007bff; */
   border-bottom: 2px solid rgba(211, 211, 211);
   backdrop-filter: blur(5px);
 }
 .offcanvas-body {
-  /* background-color: red; */
   overflow-y: auto;
 }
 .offcanvas-footer {
@@ -705,30 +700,37 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 95%;
+  width: 100%;
   height: 60px;
+  padding: 0 2.5% 2.5% 2.5%;
+}
+.comment_input {
+  width: 100%;
+  height: 100%;
+  padding:0 10px;
+  font-size: 16px;
   border-radius: 20px;
   border: 2px solid rgba(211, 211, 211);
   backdrop-filter: blur(5px);
-  margin: 0 2.5% 2.5% 2.5%;
 }
-.comment_input {
-  width: 330px;
-  height: 100%;
+.offcanvas-footer > button{
   border: none;
-  font-size: 16px;
+  border-radius: 20px;
+  background-color: #6c6b6b;
 }
+.offcanvas-footer > button >i {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.offcanvas-footer > button {
-  height: 45px;
-  width: 50px;
-  border-radius: 10px;
-  background-color: rgba(180, 180, 180, 0.7);
-  border: none;
 }
 .offcanvas-icon {
   color: white;
 }
+
+
 /*  */
 
 /*  */
@@ -901,7 +903,7 @@ a {
   .sideBar-left-phone{
     position: fixed;
     background-color: white;
-    z-index: 10000;
+    z-index: 1000;
     top: 60px;
     left: 0;
     width: 70%;

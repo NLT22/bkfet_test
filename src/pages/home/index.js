@@ -132,6 +132,9 @@ overlay.addEventListener("click", function () {
 });
 
 
+
+
+
 // hiển thị/ ẩn menu bar cho menubars button
 const menuBarBtn = document.querySelector(".menu-bars");
 const sideBarRight = document.querySelector(".sideBar");
