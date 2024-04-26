@@ -21,7 +21,8 @@ h1 {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  /* margin-top: 20px; */
+  border-left: 6px solid #007bff;
+  padding-left: 10px;
 }
 
 /* Thiết lập văn bản chính */
@@ -564,12 +565,13 @@ a {
   align-items: center;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .card:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: 0.5s;
+  transition: 0.3s;
   padding: 5px;
+  border: 2px solid #004ea2;
 }
 .card-img {
   width: 100%;
@@ -630,6 +632,7 @@ a {
   color: #ccc;
   text-decoration: line-through;
 }
+/* Style popup */
 .popup {
   position: fixed;
   top: 0;
@@ -797,10 +800,11 @@ a {
 .button-bottom-right > a {
   color: white;
 }
-/*  */
+/* Style cho popup Xem tất cả  */
 .popuppopup {
   display: none;
   position: fixed;
+  margin-top: 60px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -830,7 +834,7 @@ a {
     background-image: url("../../../assets/images/Asset\ 1.png");
     background-repeat: no-repeat;
     background-position:center right;
-    border: 1px solid #007bff;
+    border: 1px solid #004ea2;
   }
 
 }
@@ -972,7 +976,7 @@ a {
   /* course content */
   .course-content{
     width: 100%;
-    padding: 2vw;
+    padding: 2vw 2vw 100px 2vw;
     }
 
   /* Điều chỉnh kích thước slider */

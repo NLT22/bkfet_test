@@ -21,7 +21,8 @@ h1 {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  /* margin-top: 20px; */
+  border-left: 6px solid #007bff;
+  padding-left: 10px;
 }
 
 /* Thiết lập văn bản chính */
@@ -825,7 +826,7 @@ a {
     background-image: url("../../../assets/images/Asset\ 1.png");
     background-repeat: no-repeat;
     background-position:center right;
-    border: 1px solid #007bff;
+    border: 1px solid #004ea2;
   }
 }
 @media only screen and (min-width:991px) and (max-width: 1400px) {
