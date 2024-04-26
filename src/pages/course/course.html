@@ -59,100 +59,164 @@
   <body>
     <div>
       <div>
-        <div class="header">
-          <div class="logo-bk col col-2">
-            <img
-              src="../../../assets//images/Logo_PNG.png"
-              alt="logo"
-              class="header-logo"
-            />
+      <div class="header row">
+        <div class="logo-bk col col-sm">
+          <div class="menu-bars">
+            <i class="fa-solid fa-bars"></i>
           </div>
-          <div class="menu-button">
-            <div class="header-menu col col-8">
-              <ul>
-                <li class="li-title">
-                  <a href="../home/index.html" class="menu__title">
-                    <i class="fa-solid fa-house"></i>Trang chủ</a
-                  >
-                </li>
-                <li class="li-title">
-                  <a href="./course.html" class="menu__title"
-                    ><i class="fa-solid fa-circle-play"></i>Khóa học</a
-                  >
-                </li>
-                <li class="li-title">
-                  <a href="" class="menu__title">
-                    <i class="fa-solid fa-book-bookmark"></i>Sách, Tài liệu
-                    ID</a
-                  >
-                </li>
-                <li class="li-title">
-                  <a href="" class="menu__title"
-                    ><i class="fa-solid fa-book-open"></i>Học tập</a
-                  >
-                </li>
-                <li class="li-title">
-                  <a href="" class="menu__title"
-                    ><i class="fa-regular fa-comment-dots"></i>Tin nhắn</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="search-button">
-              <div class="search-container">
-                <input type="text" placeholder="Nhập ID" class="search-input" />
-                <button type="submit" class="search-button">
-                  <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-                </button>
-              </div>
-              <div class="header-button col col-2">
-                <div class="login">
-                  <a href="#" class="button-login">Đăng nhập</a>
-                </div>
+          <img
+            src="../../../assets//images/Logo_PNG.png"
+            alt="logo"
+            class="header-logo"
+          />
+          
+        </div>
+        
+        <div class="header-menu col-sm-6">
+          <a href="../home/index.html" class="menu__link">
+            <i class="fa-solid fa-house"></i><span>Trang chủ</span>
+          </a>
+          <a href="../course/course.html" class="menu__link">
+            <i class="fa-solid fa-circle-play"></i><span>Khóa học</span>
+          </a>
+          <a href="" class="menu__link">
+            <i class="fa-solid fa-book-bookmark"></i><span>Tài liệu</span>
+          </a>
+          <a href="" class="menu__link">
+            <i class="fa-solid fa-book-open"></i><span>Học tập</span>
+          </a>
+          <a href="" class="menu__link">
+            <i class="fa-regular fa-comment-dots"></i><span>Tin nhắn</span>
+          </a>
+        </div>
 
-                <div class="sign-up">
-                  <a href="#" class="button-sign_up">Đăng ký</a>
-                </div>
-              </div>
+        <div class="search-button col col-sm">
+
+          <div class="search-container">
+            <input type="text" placeholder="Nhập ID" class="search-input" id="seachInput" />
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </button>
+          </div>
+
+          <div class="header-button">
+            
+            <div class="account">
+              <i class="fa-solid fa-user button-account"></i>
             </div>
+
+            <div class="login">
+              <a href="#" class="button-login">Đăng nhập</a>
+            </div>
+
+            <div class="sign-up">
+              <a href="#" class="button-sign_up">Đăng ký</a>
+            </div>
+
           </div>
         </div>
+        
+      </div>
         <div class="content-course">
-          <div class="sideBar-course overflow-scroll">
-            <div class="sideBar-contetn">
-              <div class="header-sideBar-course">
-                <i class="fa-solid fa-align-justify fa-2xl"></i>
-                <h1>TẤT CẢ KHÓA HỌC</h1>
-              </div>
-              <div class="content-sideBar-course">
-                <div class="only-content" id="dropdown1Container">
-                  <div class="only-content-left">
-                    <i class="fa-solid fa-layer-group fa-2xl"></i
-                    ><a class="only-content-left-title">Bách khoa đại cương</a>
+          <div class="sideBar col col-2">
+            <div class="list-course row">
+              <h1>Tất cả khóa học</h1>
+              <!--  -->
+              <div class="course">
+                <div class="list-course-left ">
+                  <div class="course-title" id="dropdown1Container">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="course-title-right">
+                      <span>Bách Khoa đại cương</span>
+                      <button
+                        onclick="toggleDropdown('dropdown1') "
+                        class="dropbtn"
+                      >
+                        <i
+                          class="fa-solid fa-angle-down fa-xl"
+                          id="dropdown1Icon"
+                        ></i>
+                      </button>
+                    </div>
                   </div>
-                  <button
-                    onclick="toggleDropdown('dropdown1') "
-                    class="dropbtn"
-                  >
-                    <i class="fa-solid fa-chevron-down fa-2xl"></i>
-                  </button>
-                </div>
-                <div id="dropdown1Content" class="dropdown-content">
-                  <a>Giải tích 1</a>
-                  <a>Vật lý đại cương 1</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
-                  <a>Kỹ thuật điện tử</a>
+                  <div id="dropdown1Content" class="dropdown-content">
+                    <a>Giải tích 1</a>
+                    <a>Vật lý đại cương 1</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                  </div>
+
+                  <div class="course-title" id="dropdown2Container">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="course-title-right">
+                      <span>Đánh giá tư duy Bách Khoa</span>
+                      <button
+                        onclick="toggleDropdown('dropdown2') "
+                        class="dropbtn"
+                      >
+                        <i
+                          class="fa-solid fa-angle-down fa-xl"
+                          id="dropdown2Icon"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="dropdown2Content" class="dropdown-content">
+                    <a>Giải tích 1</a>
+                    <a>Vật lý đại cương 1</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                  </div>
+                  <div class="course-title" id="dropdown3Container">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="course-title-right">
+                      <span>Lập trình</span>
+                      <button
+                        onclick="toggleDropdown('dropdown3') "
+                        class="dropbtn"
+                      >
+                        <i
+                          class="fa-solid fa-angle-down fa-xl"
+                          id="dropdown3Icon"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="dropdown3Content" class="dropdown-content">
+                    <a>Giải tích 1</a>
+                    <a>Vật lý đại cương 1</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                    <a>Kỹ thuật điện tử</a>
+                  </div>
                 </div>
               </div>
+              <!--  -->
             </div>
+            <!--  -->
           </div>
           <div class="course-content overflow-scroll">
             <div class="course-item">
@@ -319,7 +383,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark"
                                 class="carousel carousel-dark slide"
@@ -416,7 +480,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -516,7 +580,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark2"
                                 class="carousel carousel-dark slide"
@@ -613,7 +677,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -713,7 +777,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark3"
                                 class="carousel carousel-dark slide"
@@ -810,7 +874,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -910,7 +974,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark4"
                                 class="carousel carousel-dark slide"
@@ -1007,7 +1071,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -1107,7 +1171,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark5"
                                 class="carousel carousel-dark slide"
@@ -1204,7 +1268,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -2383,7 +2447,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark"
                                 class="carousel carousel-dark slide"
@@ -2480,7 +2544,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -2580,7 +2644,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark2"
                                 class="carousel carousel-dark slide"
@@ -2677,7 +2741,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -2777,7 +2841,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark3"
                                 class="carousel carousel-dark slide"
@@ -2874,7 +2938,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -2974,7 +3038,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark4"
                                 class="carousel carousel-dark slide"
@@ -3071,7 +3135,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -3171,7 +3235,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark5"
                                 class="carousel carousel-dark slide"
@@ -3268,7 +3332,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -3506,7 +3570,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark"
                                 class="carousel carousel-dark slide"
@@ -3603,7 +3667,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -3703,7 +3767,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark2"
                                 class="carousel carousel-dark slide"
@@ -3800,7 +3864,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -3900,7 +3964,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark3"
                                 class="carousel carousel-dark slide"
@@ -3997,7 +4061,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -4097,7 +4161,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark4"
                                 class="carousel carousel-dark slide"
@@ -4194,7 +4258,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -4294,7 +4358,7 @@
                             </button>
                           </div>
                           <div class="content-popup">
-                            <div class="contetn-popup-left">
+                            <div class="content-popup-left">
                               <div
                                 id="carouselExampleDark5"
                                 class="carousel carousel-dark slide"
@@ -4391,7 +4455,7 @@
                                 />
                               </div>
                             </div>
-                            <div class="contetn-popup-right">
+                            <div class="content-popup-right">
                               <div class="header-content-right">
                                 <div class="header-right">
                                   <h1>
@@ -4517,7 +4581,7 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 12,
         autoplay: {
           delay: 2500,
@@ -4532,7 +4596,14 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+        // Khi màn hình dưới 990px, slidesPerView = 1
+        990: {
+            slidesPerView: 2,
+        }
+    }
       });
+      
 
       //
       $(document).ready(function () {
