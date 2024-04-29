@@ -399,7 +399,7 @@ a {
 .course-content {
   width: 78.5%;
   height: 100%;
-  background-color: #f0f2f5;
+  background-color: aliceblue;
   padding: 20px;
   /* display: flex;
   flex-direction: column;
@@ -569,9 +569,9 @@ a {
 }
 .card:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: 0.3s;
-  padding: 5px;
   border: 2px solid #004ea2;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 .card-img {
   width: 100%;
