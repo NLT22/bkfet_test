@@ -17,6 +17,7 @@ function openPopup(popupId) {
   var popup = document.getElementById(popupId);
   if (popup) {
     popup.style.display = "flex";
+    document.querySelector(".header").style.zIndex = "1";
   }
 }
 
@@ -25,6 +26,7 @@ function closePopup(popupId) {
   var popup = document.getElementById(popupId);
   if (popup) {
     popup.style.display = "none";
+    document.querySelector(".header").style.zIndex = "1000";
   }
 }
 //
@@ -75,12 +77,14 @@ for (let i = 1; i <= 3; i++) {
     .getElementById(`showPopup${i}`)
     .addEventListener("click", function () {
       document.getElementById(`popuppopup${i}`).style.display = "block";
+      document.querySelector(".header").style.zIndex = "1";
     });
 
   document
     .getElementById(`closePopupPopup${i}`)
     .addEventListener("click", function () {
       document.getElementById(`popuppopup${i}`).style.display = "none";
+      document.querySelector(".header").style.zIndex = "1000";
     });
 }
 
